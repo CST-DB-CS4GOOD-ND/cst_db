@@ -1,0 +1,57 @@
+<style>
+#MyHeader{
+		  background-color: lightblue;
+color: black;
+padding: 15px;
+			text-align: center;
+			font-size: 200%
+}
+
+#Sentences{
+Color: black;
+Padding: 40px:
+					  Text-align:center;
+			Font-size: 135%
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+<div align = "center">
+	<head>
+		<title>Catholic Social Teaching Database</title>
+	</head>
+	<body>
+		<?php
+		echo "Hello World!";
+		?>
+
+		<h id = "MyHeader">Catholic Social Teaching</h>
+
+		<p id = "Sentences"><a href = "./reflection1.php">Life and Dignity of the Human Person</a></p>
+		<br>
+
+		<img src="Image.jpg" alt="Flowers in Chania" style="width:300px;height:150px;">
+		<br>
+
+		<p id = "Sentences"><a href = "./reflection2.php">Call to Family, Community, and Participation</a></p>
+		<br>
+
+		<img src = "Familyimage.jpeg" alt = "Family in US" style = "width:300px;height:150px;">
+		<br>
+	</body>
+
+	<p>SQL Form</p>
+	<form action="/sentpass_sql.php" method="post">
+		Sentence:<br>
+			<select name="sent">
+				<option value="Life">Life</option>
+				<option value="Family">Family</option>
+ 			</select><br>
+		Passage:<br>
+			<input type="text" name="pass"><br>
+		<input type="submit" value="submit">
+	</form>
+
+</div>
+</html>
