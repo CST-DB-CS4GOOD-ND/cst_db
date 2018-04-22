@@ -1,17 +1,23 @@
 <style>
 #MyHeader{
-		  background-color: lightblue;
-color: black;
+background-image: url("masthead.jpg");
+color: gold;
 padding: 15px;
 			text-align: center;
 			font-size: 200%
 }
 
 #Sentences{
-Color: black;
+Color: white;
 Padding: 40px:
 					  Text-align:center;
-			Font-size: 135%
+                      Font-size: 135%;
+           Border: 1px solid powderblue;
+}
+
+body{
+    background-image: url("ND.jpg");
+    background-position: center;
 }
 </style>
 
@@ -28,43 +34,61 @@ Padding: 40px:
 
 		<h id = "MyHeader">Catholic Social Teaching</h>
 
-		<p id = "Themes"><a href = "./theme1.php">Life and Dignity of the Human Person</a></p>
+<div id = "Sentences" style="background-color: rgba(0,0,0,0.5);;">
+    <a href = "./reflection1.php" style="color: white; text-decoration: none;">
+        <h3>Life and Dignity of the Human Person</h3>
+    </a>
+</div>
 		<br>
-
-      <p id = "Themes"><a href = "./theme2.php">Call to Family, Community, and Participation</a></p>
-		<br>
+        <div id = "Sentences" style="background-color: rgba(0,0,0,0.5);;">
+            <a href = "./reflection1.php" style="color: white; text-decoration: none;">
+                <h3>Call to Family, Community, and Participation</h3>
+            </a>
+        </div>
+        <br>
+        <div id = "Sentences" style="background-color: rgba(0,0,0,0.5);;">
+            <a href = "./reflection1.php" style="color: white; text-decoration: none;">
+                <h3>Rights and Responsibility</h3>
+            </a>
+        </div>
+        <br>
+        <div id = "Sentences" style="background-color: rgba(0,0,0,0.5);;">
+            <a href = "./reflection1.php" style="color: white; text-decoration: none;">
+                <h3>Option for the poor and vulnerable</h3>
+            </a>
+        </div>
+        <br>
+        <div id = "Sentences" style="background-color: rgba(0,0,0,0.5);;">
+            <a href = "./reflection1.php" style="color: white; text-decoration: none;">
+                <h3>The dignity of Work and rights of workers</h3>
+            </a>
+        </div>
+        <br>
+        <div id = "Sentences" style="background-color: rgba(0,0,0,0.5);;">
+            <a href = "./reflection1.php" style="color: white; text-decoration: none;">
+                <h3>Solidarity</h3>
+            </a>
+        </div>
+        <br>
+        <div id = "Sentences" style="background-color: rgba(0,0,0,0.5);;">
+            <a href = "./reflection1.php" style="color: white; text-decoration: none;">
+                <h3>Care for God's Creation</h3>
+            </a>
+        </div>
+        <br>
         
-      <p id = "Themes"><a href = "./theme3.php">Rights and Reponsibility</a></p>
-      <br>
-        
-      <p id = "Themes"><a href = "./theme4.php">Option for the Poor and Vulnerable</a></p>
-      <br>
-        
-      <p id = "Themes"><a href = "./theme5.php">The Dignity of Work and Rights of Workers</a></p>
-      <br>
-        
-      <p id = "Themes"><a href = "./theme6.php">Solidarity</a></p>
-      <br>
-        
-      <p id = "Themes"><a href = "./theme7.php">Care for God's Creation</a></p>
-      <br>
 
 
 	</body>
 
 	<p>SQL Form</p>
-	<form action="/theme_quote_sql.php" method="post">
-		Theme:<br>
+	<form action="/sentpass_sql.php" method="post">
+		Sentence:<br>
 			<select name="sent">
 				<option value="Life">Life</option>
 				<option value="Family">Family</option>
-				<option value="Rights">Rights</option>
-				<option value="Option">Option</option>
-				<option value="Dignity">Dignity</option>
-				<option value="Solidarity">Solidarity</option>
-				<option value="Care">Care</option>
  			</select><br>
-		Quotation:<br>
+		Passage:<br>
 			<input type="text" name="pass"><br>
 		<input type="submit" value="submit">
 	</form>
