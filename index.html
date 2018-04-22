@@ -28,38 +28,43 @@ Padding: 40px:
 
 		<h id = "MyHeader">Catholic Social Teaching</h>
 
-		<p id = "Sentences"><a href = "./theme1.php">Life and Dignity of the Human Person</a></p>
+		<p id = "Themes"><a href = "./theme1.php">Life and Dignity of the Human Person</a></p>
 		<br>
 
-        <p id = "Sentences"><a href = "./theme2.php">Call to Family, Community, and Participation</a></p>
+      <p id = "Themes"><a href = "./theme2.php">Call to Family, Community, and Participation</a></p>
 		<br>
         
-        <p id = "Sentences">Rights and Reponsibility</p>
-        <br>
+      <p id = "Themes"><a href = "./theme3.php">Rights and Reponsibility</a></p>
+      <br>
         
-        <p id = "Sentences">Option for the poor and vulnerable</p>
-        <br>
+      <p id = "Themes"><a href = "./theme4.php">Option for the Poor and Vulnerable</a></p>
+      <br>
         
-        <p id = "Sentences">The dignity of Work and rights of workers</p>
-        <br>
+      <p id = "Themes"><a href = "./theme5.php">The Dignity of Work and Rights of Workers</a></p>
+      <br>
         
-        <p id = "Sentences">Solidarity</p>
-        <br>
+      <p id = "Themes"><a href = "./theme6.php">Solidarity</a></p>
+      <br>
         
-        <p id = "Sentences">Care for God's Creation</p>
-        <br>
+      <p id = "Themes"><a href = "./theme7.php">Care for God's Creation</a></p>
+      <br>
 
 
 	</body>
 
 	<p>SQL Form</p>
-	<form action="/sentpass_sql.php" method="post">
-		Sentence:<br>
+	<form action="/theme_quote_sql.php" method="post">
+		Theme:<br>
 			<select name="sent">
 				<option value="Life">Life</option>
 				<option value="Family">Family</option>
+				<option value="Rights">Rights</option>
+				<option value="Option">Option</option>
+				<option value="Dignity">Dignity</option>
+				<option value="Solidarity">Solidarity</option>
+				<option value="Care">Care</option>
  			</select><br>
-		Passage:<br>
+		Quotation:<br>
 			<input type="text" name="pass"><br>
 		<input type="submit" value="submit">
 	</form>
