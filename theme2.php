@@ -1,6 +1,6 @@
 <html>
 <body>
-<h1>Life and Dignity of the Human Person</h1>
+<h1>Call</h1>
 <p>Student responses</p>
 
 <?php
@@ -18,7 +18,7 @@ echo "Connected Successfully";
 $table = "select quote_id, quote from quotes where theme_id=1";
 $result = $conn->query($table);
 if ($result->num_rows > 0) {
-		  echo "<table border = '1'>";
+		  echo "<table border = '2'>";
 		  echo "<tr>";
 		  echo "<th>quote_id</th>";
 		  echo "<th>quote</th>";
