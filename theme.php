@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
 		  echo "</tr>";
 		  while($row = $result->fetch_assoc()) {
 					 echo "<tr>";
-					 echo '<td><a href = "./experience.php?id='.$row['quote'].'">'.$row['quote'].'</a></td>';
+					 echo '<td><a href = "./experience.php?quote='.$row['quote_id'].'">'.$row['quote'].'</a></td>';
 					 echo "</tr>";
 		  }
 		  echo "</table>";
