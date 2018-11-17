@@ -23,16 +23,15 @@ if ($result->num_rows > 0) {
 	}
 }
 else {
-	echo "No theme";
+	echo "<h1>ERROR: No theme</h1>";
 }
-echo "<p>Quotes<p>";
 
 $table = "select quote_id, quote from quotes where theme_id=$themeId";
 $result = $conn->query($table);
 if ($result->num_rows > 0) {
 		  echo "<table border = '1'>";
 		  echo "<tr>";
-		  echo "<th>Quote</th>";
+		  echo "<th>Quotes</th>";
 		  echo "</tr>";
 		  while($row = $result->fetch_assoc()) {
 					 echo "<tr>";
@@ -43,14 +42,15 @@ if ($result->num_rows > 0) {
 		  echo "</table>";
 }
 else {
-		  echo "No Results";
+			echo "<table border = '1'>";
+			echo "<tr>";
+			echo "<th>Quotes</th>";
+			echo "</tr>";
+			echo "<tr>";
+		  echo "<td>No Results</td>";
+			echo "</tr>";
+			echo "</table";
 }
-
-echo "<p>Enter a new quote for this theme:</p>";
-echo "<form action=''>";
-	echo "<textarea name='new_quote' rows='10' cols='30'>Type the quote here.</textarea>";
-	echo "<br><input type='submit'>";
-echo "</form";
 
 $conn->close();
 echo "</body></html>";
