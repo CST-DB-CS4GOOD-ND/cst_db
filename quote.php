@@ -24,16 +24,15 @@ if ($result->num_rows > 0) {
 	}
 }
 else {
-	echo "No quote";
+	echo "<h1>ERROR: No quote</h1>";
 }
-echo "<p>Experiences<p>";
 
 $table = "select exp_id, experience from experiences where quote_id=$quoteId";
 $result = $conn->query($table);
 if ($result->num_rows > 0) {
 		  echo "<table border = '1'>";
 		  echo "<tr>";
-		  echo "<th>Experience</th>";
+		  echo "<th>Experiences</th>";
 		  echo "</tr>";
 		  while($row = $result->fetch_assoc()) {
 					 echo "<tr>";
@@ -43,15 +42,15 @@ if ($result->num_rows > 0) {
 		  echo "</table>";
 }
 else {
-		  echo "No Results";
+			echo "<table border = '1'>";
+			echo "<tr>";
+			echo "<th>Experiences</th>";
+			echo "</tr>";
+			echo "<tr>";
+		  echo "<td>No Results</td>";
+			echo "</tr>";
+			echo "</table";
 }
-
-echo "<p>Enter a new experience for this theme and quote:</p>";
-echo "<form action=''>";
-	echo "<textarea name='new_experience' rows='10' cols='30'>Type the experience here.</textarea>";
-	echo "<br><input type='submit'>";
-echo "</form";
-
 
 $conn->close();
 echo "</body></html>";
