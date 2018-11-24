@@ -1,0 +1,68 @@
+<!-- Anything in brackets is something that needs to come from the database -->
+<!-- I've just added HTML for three quotes; I don't know any way to make it adjust to more/fewer, i.e. if one topic has five quotes and the other has six -->
+<style>
+{ margin: 0; padding: 0; }
+#MyHeader{
+			padding: 15px;
+			font-size: 250%;
+			color: white;
+}
+#Sentences{
+			padding: 15px;
+			font-size: 100%;
+			color: white;
+}
+#TitleLine{
+	border-width: 2px;
+	border-style: solid;
+	color: rgb(176,144,67);
+}
+body{
+	background: url('masthead.jpg')
+		no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+hr{
+	color: rgb(176,144,67);
+}
+
+a{
+	color: white; text-decoration: none;
+}
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[Name of Topic]</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png"  sizes="16x16" />
+</head>
+
+<body>
+<h id="MyHeader">
+<em>[Name of Topic]</em>
+</h>
+<hr id="TitleLine">
+
+
+<p id="Sentences"><a href="[Responses 1]">
+[First Quote]</a>
+</p>
+
+<hr>
+
+<p id="Sentences"><a href="[Responses 2]">
+[Second Quote]</a>
+</p>
+
+<hr>
+
+<p id="Sentences"><a href="[Responses 3]">
+[Third Quote]</a>
+</p>
+
+</body>
+</html>
