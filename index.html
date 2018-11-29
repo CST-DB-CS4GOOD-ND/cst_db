@@ -1,7 +1,6 @@
 <style>
 #MyHeader{
-background-image: url("masthead.jpg");
-color: gold;
+background-image: url(masthead.jpg);f
 padding: 15px;
 			text-align: center;
 			font-size: 200%
@@ -16,7 +15,7 @@ Padding: 40px:
 }
 
 body{
-    background-image: url("ND.jpg");
+    background-image: url(ND.jpg);
     background-position: center;
 }
 </style>
@@ -26,13 +25,16 @@ body{
 <div align = "center">
 	<head>
 		<title>Catholic Social Teaching Database</title>
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        
+        <link rel="icon" type="image/png" href="favicon-16x16.png"  sizes="16x16" />
 	</head>
 	<body>
 		<?php
 		echo "Hello World!";
 		?>
 
-		<h id = "MyHeader">Catholic Social Teaching</h>
+		<h id = "MyHeader" style="color: white; text-decoration: none;">Catholic Social Teaching</h>
 
 <div id = "Sentences" style="background-color: rgba(0,0,0,0.5);;">
     <a href = "./theme.php?theme=1" style="color: white; text-decoration: none;">
@@ -76,7 +78,7 @@ body{
             </a>
         </div>
         <br>
-        
+
 
 
 	</body>

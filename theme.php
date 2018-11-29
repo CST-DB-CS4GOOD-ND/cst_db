@@ -19,7 +19,7 @@ $themeQuery = "select theme from themes where theme_id=$themeId";
 $result = $conn->query($themeQuery);
 if ($result->num_rows > 0) {
 	while($row = $result->fetch_assoc()) {
-		echo "<h1>".$row['theme']."</h1>";
+		echo "<h1>THEME: ".$row['theme']."</h1>";
 	}
 }
 else {
@@ -51,6 +51,9 @@ else {
 			echo "</tr>";
 			echo "</table";
 }
+
+echo '<br>';
+echo '<a href = "./index.html">'."Return to Homepage".'</a>';
 
 $conn->close();
 echo "</body></html>";
