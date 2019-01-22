@@ -49,6 +49,12 @@ The structure is simple; you should have just four tables:
     * The *foreign key* is the `quote_id`.  This points at a quote.
     
 4. `users`: should hold valid users.  It's a work in progress, see **TODO** below.
+
+## Inserting Data into the Database
+
+* Use `converter.py` (thanks Josh!) to automatically parse and insert a .DOCX file contents into the database.  Alternatively, insert things manually into the database.
+
+* Currently, there is no feature for adding/editing data via the web interface.  See **TODO** below.
         
 ## Running and Behavior
 
