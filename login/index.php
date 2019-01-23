@@ -40,6 +40,8 @@ if($_POST['submit']) {
 	<input type="password" name="password" placeholder="Enter password here">
 	<input type="submit" name="submit" value="Login">
 </form>
+<br/>
+<a href="../index.html" >Return to Homepage</a>
 
 </body>
 </html>
